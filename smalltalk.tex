@@ -35,7 +35,7 @@
 %%%El documento comienza aqui
 
 \title{\textbf{Investigacion de Lenguajes - Smalltalk}}
-\author{\textbf{Jimmy Banchon - Rene Balda}}
+\author{\textbf{Jimmy Banchón - René Balda}}
 \date{\textbf{\today}}
 \begin{document}
 
@@ -44,23 +44,23 @@
 \maketitle
 \section{\textbf{Introducción}} 
 \paragraph{} \noindent
-Smalltalk es un lenguaje de programación orientada a objeto puro, se basa en la comunicación entre objetos mediante envio de mensajes, está considerado como el primer lenguaje de este paradigma, ya que  en \textbf{Smalltalk} todo es un objeto; éste influyo drásticamente en el surgimiente de lenguajes como JAVA, PHP, Python, Ruby y muchos de los actuales lenguajes orientados a objetos.
- \textbf{Smalltalk} es mucho mas que un lenguaje de programación, es un ambiente completo de desarrollo de programas,que integra muchas caracteristicas, que lo hacen un sistema de ventanas y manejador de codigo fuente.
+Smalltalk es un lenguaje de programación orientada a objeto puro, se basa en la comunicación entre objetos mediante envío de mensajes, está considerado como el primer lenguaje de este paradigma, ya que  en \textbf{Smalltalk} todo es un objeto; éste influyó drásticamente en el surgimiente de lenguajes como JAVA, PHP, Python, Ruby y muchos de los actuales lenguajes orientados a objetos.
+ \textbf{Smalltalk} es mucho más que un lenguaje de programación, es un ambiente completo de desarrollo de programas,que integra muchas características, que lo hacen un sistema de ventanas y manejador de código fuente.
 \section{\textbf{Características}}
 \paragraph{} \noindent
 Las principales características de  \textbf{Smalltalk} son:
 \subsection{\textbf{Orientado a Objetos}}
 \paragraph{} \noindent
-\textbf{Smalltalk} por ser un lenguaje de programacion orientado a objeto puro, en el todo tipo de dato es una instancia de una clase, es por eso, que la comunicacion entre objetos se hace por envio de mensajes.
-\subsection{\textbf{Tipado Dinamico}}
+\textbf{Smalltalk} por ser un lenguaje de programación orientado a objeto puro, en él todo tipo de dato es una instancia de una clase, es por eso, que la comunicación entre objetos se hace por envío de mensajes.
+\subsection{\textbf{Tipado Dinámico}}
 \paragraph{} \noindent
 En \textbf{Smalltalk} una variable puede tomar valores de distinto tipo en distintos momentos.
 \ subsection{\textbf{Compilacion JIT}}
 \paragraph{} \noindent
-\textbf{Smalltalk} es un lenguaje interpretado, es decir, el codigo fuente es traducido a bytecode para que luego este sea traducido a lenguaje de maquina, esta caracteristica hace que el programa compilado sea multiplataforma y compatible con cualquier arquitectura.
+\textbf{Smalltalk} es un lenguaje interpretado, es decir, el código fuente es traducido a bytecode para que luego éste sea traducido a lenguaje de máquina, ésta característica hace que el programa compilado sea multiplataforma y compatible con cualquier arquitectura.
 \ subsection{\textbf{Garbage Collection:}}
 \paragraph{} \noindent
-\textbf{Smalltalk} utiliza este mecanismo de gestion de memoria, para que el usuario no deba hacer una subrutina para liberar memoria cuando no hayan objetos referenciados a alguna variable.
+\textbf{Smalltalk} utiliza este mecanismo de gestión de memoria, para que el usuario no deba hacer una subrutina para liberar memoria cuando no hayan objetos referenciados a alguna variable.
 \section{\textbf{Historia}}
 \paragraph{} \noindent
 EL comienzo de lo que se conocería como programación orientada a objeto tuvo sus origines en Simula-67 pero luego el desarrollo fue completado con la evolución del lenguaje \textbf{Smalltalk}.
@@ -75,10 +75,10 @@ Este a su vez fue implementado en el modelo Alto salido de Xerox PARC. La primer
 \paragraph{} \noindent
 Los sistemas operativos orientados a objetos de Apple Computers fueron inspirados por \textbf{Smalltalk}.
 \section{\textbf{Tutorial de Instalación}}
-\subsection{\textbf{Instalacion en Windows}}
+\subsection{\textbf{Instalación en Windows}}
 \paragraph{} \noindent
-Para comenzar a programar en smalltalk nos descargaremos Squeak el cual es una implementación de smalltalk este es el link \href{http://www.squeak.org/Download/}{Squeak All in one}
-Al abrir la página nuestro link de descarga se encontrara en donde nos dice la figura siguiente.
+Para comenzar a programar en smalltalk nos descargaremos Squeak el cual es una implementación de \textbf{Smalltalk} este es el link \href{http://www.squeak.org/Download/}{Squeak All in one}
+Al abrir la página nuestro link de descarga se encontrará en donde nos dice la figura siguiente.
 
 				\begin{center}
 				\includegraphics[width=0.8\textwidth]{images/tutorial}
@@ -91,16 +91,16 @@ Una vez descargado lo descomprimimos en una carpeta y dentro encontraremos el ej
 				\end{center}
 \subsection{\textbf{Instalacion en Linux/Debian}}
 \paragraph{} \noindent
-Para instalar \textbf{Smalltalk} en sistemas Linux/Debian se debe primero agregar el repositorio que contiene el paquete Squeak, para hacerlo agregaremos las siguientes lineas al archivo  /etc/apt/source.list
+Para instalar \textbf{Smalltalk} en sistemas Linux/Debian se debe primero agregar el repositorio que contiene el paquete Squeak, para hacerlo agregaremos las siguientes líneas al archivo  /etc/apt/source.list
 
 \begin{lstlisting}
   deb http://ftp.squeak.org/debian/ stable main
   deb-src http://ftp.squeak.org/debian/ stable main
 \end{lstlisting}
 \paragraph{} \noindent
-Este repositorio solo esta disponible para sistemas Debian y sus derivados.
+Este repositorio sólo esta disponible para sistemas Debian y sus derivados.
 \paragraph{} \noindent
-Una vez agregadas las lineas del repositorio que contiene squeak, abriremos el terminal y ejecutaremos los siguientes comandos
+Una vez agregadas las líneas del repositorio que contiene squeak, abriremos el terminal y ejecutaremos los siguientes comandos
 \begin{lstlisting}
 $ sudo apt-get update
 $ sudo apt-get install squeak squeak-plugin
@@ -116,37 +116,54 @@ $ squeak
 Para comenzar a desarrollar en \textbf{Smalltalk} debemos hacer lo siguiente:
 \begin{enumerate}
 \item
-En la barra de herramientas hacemos click en el menu 'Projects'
+En la barra de herramientas hacemos click en el menú `Projects'
 				\begin{center}
 				\includegraphics[width=0.5\textwidth]{images/barra_herramientas}
 				\end{center}
 
 \item
-Elegimos la opcion 'New Project', esta desplegara un submenu en el cual elegiremos la opcion 'New Morphic Project'
+Elegimos la opcion `New Project', esta desplegará un submenú en el cual elegiremos la opción `New Morphic Project'
 				\begin{center}
 				\includegraphics[width=0.5\textwidth]{images/new_project}
 				\end{center}
 
 \item
-A continuacion de desplegara una ventana con etiquetas, selecionaremos la etiqueta 'Tools ' en el margen derecho de la ventana.
+A continuación se desplegará una ventana con etiquetas, selecionaremos la etiqueta `Tools ' en el margen derecho de la ventana.
 				\begin{center}
 				\includegraphics[width=0.5\textwidth]{images/tools}
 				\end{center}
 \item
-Esto hara que se despliegue una barra lateral en la cual aparecen varias ventanas, arrastraremos las ventanas 'Transcript' y 'Workspace' en la parte principla de la ventana.
+Esto hará que se despliegue una barra lateral en la cual aparecen varias ventanas, arrastraremos las ventanas `Transcript' y `Workspace' en la parte principla de la ventana.
 				\begin{center}
 				\includegraphics[width=0.5\textwidth]{images/drag_tools}
 				\end{center}
 \item
-En la subventana 'Workspace' escribiremos nuestro primer programa "¡Hola Mundo!" del siguiente modo:
+En la subventana `Workspace' escribiremos nuestro primer programa ``¡Hola Mundo!" del siguiente modo:
 \begin{lstlisting}
-Transcript show: 'Hola Mundo! 
+Transcript show:`'Hola Mundo! 
 \end{lstlisting}
-ejecutamos con ctrl - D. En la subeventana 'Transcript' podremos visualizar la ejecucion de nuestro programa.
+ejecutamos con ctrl - D. En la subeventana `Transcript' podremos visualizar la ejecución de nuestro programa.
 				\begin{center}
 				\includegraphics[width=0.5\textwidth]{images/executing}
 				\end{center}
 
+\subsection{\textbf{Suma de dos numeros}}
+\paragraph{}\noindent
+Para este ejemplo debemos seguir los pasos 1 - 4  del ejemplo anterior y en el `Workspace' escribimos:
+\begin{lstlisting}
+|var1 var2  var3| ``declaramos variables locales"
+var1 := 2		  ``asignamos valores a variable 1"
+var2 := 3		  ``asignamos valores a variable 2"
+var3 := var1+var2 ``guardamos la suma de los 2 numeros en var3"
+``Mostramos los valores y su resultado"
+Transcript show: `Primer valor: ',var1,`  ',`Segundo valor: ',var2,`  ', `Resultado: ',var3 
+\end{lstlisting}
+\paragraph{}\noindent
+Presionamos ctrl - D el resultado lo veremos en la venta `Transcript'.
+
+				\begin{center}
+				\includegraphics[width=0.5\textwidth]{images/second_example}
+				\end{center}
 
 
 \end{enumerate}
